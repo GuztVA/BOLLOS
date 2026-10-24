@@ -1,171 +1,175 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Bollo’s: bolo no pote artesanal em Uberlândia, MG. Sabores, preços e onde encontrar nas lojas e eventos geek.">
-<meta property="og:title" content="Bollo’s | Bolo no pote em Uberlândia">
-<meta property="og:description" content="Doces, games e diversão. Veja os sabores e os preços.">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B0%3C/text%3E%3C/svg%3E">
-<title>Bollo’s | Bolo no pote em Uberlândia</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--brown:#3f160f;--red:#d52029;--cream:#fbf0e0;--sand:#f6e3c8;--tan:#d9a66b;--teal:#4fa5ae;--ink:#3f160f;--bg:var(--cream);--card:var(--sand);--muted:#7b5548;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#fbf0e0;--bg:#2a0f0a;--card:#3f160f;--muted:#d9b99a}}
-:root[data-theme="dark"]{--ink:#fbf0e0;--bg:#2a0f0a;--card:#3f160f;--muted:#d9b99a}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Nunito,system-ui,sans-serif}
-h1,h2,h3,.price{font-family:Fredoka,Nunito,system-ui,sans-serif;font-weight:600;line-height:1.1;margin:0}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
-.logo{display:block;line-height:0}.logo img{height:64px;width:auto;display:block}
-.btn{display:inline-block;background:var(--red);color:#fff;font:600 17px Fredoka,sans-serif;padding:13px 24px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
-.btn:hover{filter:brightness(1.1)}
-.btn.alt{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:28px 0 64px}
-.hero h1{font-size:clamp(40px,7vw,68px);margin-bottom:18px}
-.hero p{max-width:30em;color:var(--muted);font-size:19px;margin:0 0 26px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.stage{background:var(--brown);border-radius:36px;padding:28px 20px 22px;text-align:center;color:var(--cream)}
-.stage svg{width:min(250px,70%);height:auto;display:block;margin:0 auto 10px}
-.stage .name{font:600 24px Fredoka,sans-serif}
-.stage .pr{color:var(--tan);margin:2px 0 14px}
-.tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.tabs button{font:600 15px Nunito,sans-serif;color:var(--cream);background:transparent;border:2px solid #7a4a3a;border-radius:999px;padding:7px 14px;cursor:pointer}
-.tabs button[aria-pressed="true"]{background:var(--cream);color:var(--brown);border-color:var(--cream)}
-section{padding:56px 0}
-h2{font-size:clamp(30px,5vw,44px);margin-bottom:8px}
-.sub{color:var(--muted);margin:0 0 30px;max-width:34em}
-.menu{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
-.menu li{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:22px 0;border-bottom:2px solid var(--ink);align-items:baseline}
-.menu h3{font-size:26px}
-.menu p{grid-column:1;margin:0;color:var(--muted);max-width:36em}
-.price{font-size:32px;color:var(--red);grid-row:1/3;grid-column:2}
-.best{display:inline-block;background:var(--teal);color:#0d2a2e;font:700 13px Nunito,sans-serif;padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
-.where{background:var(--card);border-radius:36px;padding:44px 32px}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:26px}
-.cols h3{font-size:22px;margin-bottom:6px}
-.cols p{margin:0;color:var(--muted)}
-.contact{text-align:center}
-.contact p{color:var(--muted);margin:0 auto 24px;max-width:30em}
-.pix{background:var(--brown);color:#fbf0e0;border-radius:36px;padding:40px 32px}.pix h2{margin-bottom:8px}.pix p{margin:0;color:#e8cfb0;max-width:34em}.keybox{background:#2a0f0a;border:2px dashed var(--tan);border-radius:20px;padding:16px 20px;font:700 20px Nunito,sans-serif;word-break:break-all;margin:22px 0 16px;max-width:34em}.pix .btn{background:var(--teal);color:#0d2a2e}.pix .ok{margin-left:12px;color:var(--tan);font-weight:700}
-footer{padding:36px 0 44px;text-align:center;color:var(--muted);font-size:15px}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding-bottom:40px}.where{padding:32px 22px}.price{font-size:28px}}
-@media(prefers-reduced-motion:no-preference){.layer{transition:fill .35s}}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="description" content="Bollo’s: bolo no pote artesanal em Uberlândia, MG. Sabores, preços e onde encontrar nas lojas e eventos geek.">
+
+    <meta property="og:title" content="Bollo’s | Bolo no pote em Uberlândia">
+    <meta property="og:description" content="Doces, games e diversão. Veja os sabores e os preços.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B0%3C/text%3E%3C/svg%3E">
+
+    <title>Bollo’s | Bolo no pote em Uberlândia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="wrap">
-<header><a class="logo" href="#top"><img src="assets/logo.png" alt="Bollo’s" width="640" height="284"></a><a class="btn" href="#contato">Encomendar</a></header>
+    <div class="wrap">
 
-<main id="top">
-<div class="hero">
-<div>
-<h1>Bolo no pote com cara de fase bônus</h1>
-<p>Camadas de bolo e recheio feitas à mão em Uberlândia. Você encontra a Bollo’s em lojas geek parceiras e nos eventos da cidade.</p>
-<div class="cta"><a class="btn" href="#sabores">Ver sabores e preços</a><a class="btn alt" href="#onde">Onde encontrar</a></div>
-</div>
-<div class="stage" aria-live="polite">
-<svg viewBox="0 0 200 230" role="img" aria-label="Bolo no pote">
-<defs><clipPath id="pot"><path d="M28 70 L172 70 L158 200 Q156 212 144 212 L56 212 Q44 212 42 200 Z"/></clipPath></defs>
-<g id="layers" clip-path="url(#pot)"></g>
-<path d="M28 70 L172 70 L158 200 Q156 212 144 212 L56 212 Q44 212 42 200 Z" fill="none" stroke="#fbf0e0" stroke-width="5" stroke-linejoin="round" opacity=".85"/>
-<rect x="22" y="60" width="156" height="14" rx="7" fill="#fbf0e0" opacity=".9"/>
-<g id="topping"></g>
-<circle cx="100" cy="150" r="0" fill="none"/>
-<g fill="#3f160f"><circle cx="80" cy="138" r="5"/><circle cx="120" cy="138" r="5"/></g>
-<g fill="#fff"><circle cx="82" cy="136" r="1.8"/><circle cx="122" cy="136" r="1.8"/></g>
-<path d="M90 150 Q100 162 110 150 Z" fill="#d52029"/>
-<g fill="#ff8a8a" opacity=".8"><ellipse cx="68" cy="150" rx="6" ry="4"/><ellipse cx="132" cy="150" rx="6" ry="4"/></g>
-</svg>
-<div class="name" id="fname"></div>
-<div class="pr" id="fprice"></div>
-<div class="tabs" id="tabs"></div>
-</div>
-</div>
+        <header>
+            <a class="logo" href="#top">
+                <img src="assets/logo.png" alt="Bollo’s" width="640" height="284">
+            </a>
 
-<section id="sabores">
-<h2>Sabores e preços</h2>
-<p class="sub">Quatro sabores, todos no pote individual com colher e lacre personalizado.</p>
-<ul class="menu" id="menu"></ul>
-</section>
+            <a class="btn" href="#contato">Encomendar</a>
+        </header>
 
-<section id="onde">
-<div class="where">
-<h2>Onde encontrar</h2>
-<p class="sub">A Bollo’s sai da cozinha direto para os lugares onde a turma se reúne.</p>
-<div class="cols">
-<div><h3>Lojas geek parceiras</h3><p>Potes gelados nas lojas de games, cards e colecionáveis de Uberlândia.</p></div>
-<div><h3>Eventos geek</h3><p>Estamos nos encontros de jogos, animes e cards da cidade. Os potes saem da caixa térmica, sempre gelados.</p></div>
-<div><h3>Encomendas</h3><p>Quer potes para aniversário, campeonato ou live? Chame no WhatsApp e combine quantidade e sabores.</p></div>
-</div>
-</div>
-</section>
+        <main id="top">
 
-<section id="pix">
-<div class="pix">
-<h2>Vai pagar no Pix? É aqui</h2>
-<p>Combinou o pedido? Pague pela chave abaixo e mande o comprovante no WhatsApp para a gente separar os seus potes.</p>
-<div class="keybox" id="pixkey"></div>
-<button class="btn" id="pixbtn" type="button">Copiar chave Pix</button><span class="ok" id="pixok" role="status"></span>
-</div>
-</section>
+            <div class="hero">
+                <div>
+                    <h1>Bolo no pote com cara de fase bônus</h1>
 
-<section id="contato" class="contact">
-<h2>Escolheu seu sabor?</h2>
-<p>Mande uma mensagem com os sabores e a quantidade de potes. A gente responde com a data e o local de retirada.</p>
-<a class="btn" id="wa" href="https://wa.me/5534900000000?text=Oi%2C%20quero%20encomendar%20bolo%20no%20pote%20da%20Bollo%E2%80%99s">Chamar no WhatsApp</a>
-</section>
-</main>
-<footer>Bollo’s · Doces, games e diversão · Uberlândia, MG</footer>
-</div>
+                    <p>
+                        Camadas de bolo e recheio feitas à mão em Uberlândia.
+                        Você encontra a Bollo’s em lojas geek parceiras e nos eventos da cidade.
+                    </p>
 
-<script>
-var F=[
-{n:"Chocolate com Brigadeiro",p:15,d:"Bolo de chocolate fofinho com brigadeiro cremoso, finalizado com granulado.",l:["#5a2c1c","#3a1810","#5a2c1c","#3a1810"],t:"sprinkles"},
-{n:"Prestígio",p:15,d:"Bolo de chocolate com recheio de coco e brigadeiro, o clássico que todo mundo conhece.",l:["#5a2c1c","#fbf3e6","#3a1810","#fbf3e6"],t:"coco"},
-{n:"Ninho com Nutella",p:18,d:"Bolo branco, creme de leite Ninho e Nutella em camadas. É o mais pedido.",l:["#f1d9a8","#f9ecd0","#7a4a2b","#f9ecd0"],t:"nutella",best:1},
-{n:"Morango com Chantilly",p:16,d:"Bolo branco com chantilly e morangos frescos. Leve, gelado e refrescante.",l:["#f1d9a8","#fff6ee","#e0364c","#fff6ee"],t:"morango"}
-];
-function brl(v){return "R$ "+v.toFixed(2).replace(".",",")}
-var tabs=document.getElementById("tabs"),menu=document.getElementById("menu");
-F.forEach(function(f,i){
-var b=document.createElement("button");b.textContent=f.n;b.setAttribute("aria-pressed","false");b.onclick=function(){show(i)};tabs.appendChild(b);
-var li=document.createElement("li");
-li.innerHTML="<h3>"+f.n+(f.best?'<span class="best">Mais pedido</span>':"")+"</h3><span class=\"price\">"+brl(f.p)+"</span><p>"+f.d+"</p>";
-menu.appendChild(li);
-});
-function show(i){
-var f=F[i],g=document.getElementById("layers"),h="",y=70,hh=36;
-f.l.forEach(function(c,k){h+='<rect class="layer" x="0" y="'+(y+k*hh)+'" width="200" height="'+hh+'" fill="'+c+'"/>'});
-g.innerHTML=h;
-var t="";
-if(f.t==="sprinkles"){t='<ellipse cx="100" cy="56" rx="62" ry="16" fill="#4a2218"/>';[[70,52,"#d52029"],[90,48,"#fbf0e0"],[110,50,"#4fa5ae"],[128,54,"#d9a66b"],[100,58,"#fbf0e0"],[80,60,"#d9a66b"],[120,60,"#d52029"]].forEach(function(s){t+='<rect x="'+s[0]+'" y="'+s[1]+'" width="9" height="3.5" rx="1.7" fill="'+s[2]+'" transform="rotate(-20 '+s[0]+' '+s[1]+')"/>'})}
-if(f.t==="coco"){t='<ellipse cx="100" cy="56" rx="62" ry="16" fill="#fbf3e6"/>';[[72,52],[92,47],[112,50],[130,55],[100,58],[82,60],[120,60]].forEach(function(s){t+='<circle cx="'+s[0]+'" cy="'+s[1]+'" r="3.5" fill="#fff"/>'})}
-if(f.t==="nutella"){t='<ellipse cx="100" cy="56" rx="62" ry="16" fill="#7a4a2b"/><path d="M70 50 Q100 4 130 50 Z" fill="#5a3019"/><circle cx="100" cy="30" r="9" fill="#d52029"/><circle cx="100" cy="30" r="9" fill="none" stroke="#fff" stroke-width="2"/><rect x="92" y="29" width="16" height="3" fill="#fff"/>'}
-if(f.t==="morango"){t='<ellipse cx="100" cy="56" rx="62" ry="16" fill="#fff6ee"/><path d="M70 52 Q100 0 130 52 Z" fill="#fff6ee" stroke="#f1d9a8" stroke-width="2"/><path d="M100 54 L84 34 Q100 24 116 34 Z" fill="#e0364c"/><path d="M92 30 L100 24 L108 30 Z" fill="#3b8f4f"/>'}
-document.getElementById("topping").innerHTML=t;
-document.getElementById("fname").textContent=f.n;
-document.getElementById("fprice").textContent=brl(f.p)+" por pote";
-Array.prototype.forEach.call(tabs.children,function(b,k){b.setAttribute("aria-pressed",k===i?"true":"false")});
-}
-show(2);
-var PIX="";
-(function(){
-var k=document.getElementById("pixkey"),b=document.getElementById("pixbtn"),ok=document.getElementById("pixok");
-if(!PIX){k.textContent="Chave Pix combinada pelo WhatsApp";b.style.display="none";return}
-k.textContent=PIX;
-b.onclick=function(){
-function done(m){ok.textContent=m;setTimeout(function(){ok.textContent=""},3000)}
-try{navigator.clipboard.writeText(PIX).then(function(){done("Chave copiada")},fallback)}catch(e){fallback()}
-function fallback(){var r=document.createRange();r.selectNodeContents(k);var s=window.getSelection();s.removeAllRanges();s.addRange(r);done("Toque e segure para copiar")}
-};
-})();
-</script>
+                    <div class="cta">
+                        <a class="btn" href="#sabores">Ver sabores e preços</a>
+                        <a class="btn alt" href="#onde">Onde encontrar</a>
+                    </div>
+                </div>
+
+                <div class="stage" aria-live="polite">
+                    <svg viewBox="0 0 200 230" role="img" aria-label="Bolo no pote">
+                        <defs>
+                            <clipPath id="pot">
+                                <path d="M28 70 L172 70 L158 200 Q156 212 144 212 L56 212 Q44 212 42 200 Z"/>
+                            </clipPath>
+                        </defs>
+
+                        <g id="layers" clip-path="url(#pot)"></g>
+
+                        <path d="M28 70 L172 70 L158 200 Q156 212 144 212 L56 212 Q44 212 42 200 Z"
+                              fill="none" stroke="#fbf0e0" stroke-width="5"
+                              stroke-linejoin="round" opacity=".85"/>
+
+                        <rect x="22" y="60" width="156" height="14" rx="7"
+                              fill="#fbf0e0" opacity=".9"/>
+
+                        <g id="topping"></g>
+
+                        <g fill="#3f160f">
+                            <circle cx="80" cy="138" r="5"/>
+                            <circle cx="120" cy="138" r="5"/>
+                        </g>
+
+                        <g fill="#fff">
+                            <circle cx="82" cy="136" r="1.8"/>
+                            <circle cx="122" cy="136" r="1.8"/>
+                        </g>
+
+                        <path d="M90 150 Q100 162 110 150 Z" fill="#d52029"/>
+
+                        <g fill="#ff8a8a" opacity=".8">
+                            <ellipse cx="68" cy="150" rx="6" ry="4"/>
+                            <ellipse cx="132" cy="150" rx="6" ry="4"/>
+                        </g>
+                    </svg>
+
+                    <div class="name" id="fname"></div>
+                    <div class="pr" id="fprice"></div>
+                    <div class="tabs" id="tabs"></div>
+                </div>
+            </div>
+
+            <section id="sabores">
+                <h2>Sabores e preços</h2>
+
+                <p class="sub">
+                    Quatro sabores, todos no pote individual com colher e lacre personalizado.
+                </p>
+
+                <ul class="menu" id="menu"></ul>
+            </section>
+
+            <section id="onde">
+                <div class="where">
+                    <h2>Onde encontrar</h2>
+
+                    <p class="sub">
+                        A Bollo’s sai da cozinha direto para os lugares onde a turma se reúne.
+                    </p>
+
+                    <div class="cols">
+                        <div>
+                            <h3>Lojas geek parceiras</h3>
+                            <p>Potes gelados nas lojas de games, cards e colecionáveis de Uberlândia.</p>
+                        </div>
+
+                        <div>
+                            <h3>Eventos geek</h3>
+                            <p>Estamos nos encontros de jogos, animes e cards da cidade. Os potes saem da caixa térmica, sempre gelados.</p>
+                        </div>
+
+                        <div>
+                            <h3>Encomendas</h3>
+                            <p>Quer potes para aniversário, campeonato ou live? Chame no WhatsApp e combine quantidade e sabores.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pix">
+                <div class="pix">
+                    <h2>Vai pagar no Pix? É aqui</h2>
+
+                    <p>
+                        Combinou o pedido? Pague pela chave abaixo e mande o comprovante
+                        no WhatsApp para a gente separar os seus potes.
+                    </p>
+
+                    <div class="keybox" id="pixkey"></div>
+
+                    <button class="btn" id="pixbtn" type="button">
+                        Copiar chave Pix
+                    </button>
+
+                    <span class="ok" id="pixok" role="status"></span>
+                </div>
+            </section>
+
+            <section id="contato" class="contact">
+                <h2>Escolheu seu sabor?</h2>
+
+                <p>
+                    Mande uma mensagem com os sabores e a quantidade de potes.
+                    A gente responde com a data e o local de retirada.
+                </p>
+
+                <a class="btn" id="wa"
+                   href="https://wa.me/5534900000000?text=Oi%2C%20quero%20encomendar%20bolo%20no%20pote%20da%20Bollo%E2%80%99s">
+                    Chamar no WhatsApp
+                </a>
+            </section>
+
+        </main>
+
+        <footer>
+            Bollo’s · Doces, games e diversão · Uberlândia, MG
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+```
